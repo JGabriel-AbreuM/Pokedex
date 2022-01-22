@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+}
+
+i.search {
+    color: #d9cd26;
+    margin-right: 10px;
+}
+
+i.delete {
+    color: #e35e6b
+}
+
+button {
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.sidenav {
+    background-color: #3F51B5;
+    width: 200px;
+}
+
+.sidenav a {
+    color: #fff
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #fff;
+}
+

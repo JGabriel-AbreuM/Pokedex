@@ -1,0 +1,35 @@
+<app-head></app-head>
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="pokemon">
+                <i class="material-icons">
+                    home
+                </i>
+                Meus Pokemons
+            </a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <mat-card class="card">
+            <div class="header">
+                <img src="{{pokemon.imagem}}" alt="imagem pokemon" class="imagem">
+                <div class="titles">
+                    <mat-card-title>{{pokemon.nome}}</mat-card-title>
+                    <mat-card-subtitle> {{pokemon.num_pokemon}} </mat-card-subtitle>
+                </div>
+            </div>
+            <mat-card-title class="ataques-title">Ataques</mat-card-title>
+            <div class="ataques">
+                <button mat-raised-button color="primary">{{pokemon.move1}}</button>
+                <button mat-raised-button color="primary">{{pokemon.move2}}</button>
+                <button mat-raised-button color="primary">{{pokemon.move3}}</button>
+                <button mat-raised-button color="primary">{{pokemon.move4}}</button>
+            </div>
+        </mat-card>    
+        <button mat-raised-button (click)="return()">
+            Voltar
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

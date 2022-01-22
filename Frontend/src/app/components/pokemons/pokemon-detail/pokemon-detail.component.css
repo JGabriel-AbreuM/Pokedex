@@ -1,0 +1,70 @@
+button {
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.sidenav {
+    background-color: #3F51B5;
+    width: 200px;
+}
+
+.sidenav a {
+    color: #fff
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.imagem {
+    width: 10%;
+    height: 13%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ataques-title {
+    padding: 2rem 0rem 0.5rem 1rem;
+
+}
+
+.ataques {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ataques button {
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    cursor: default;
+}
+
+.ataques button::before,
+.ataques button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.ataques button:hover {
+    box-shadow: 10px 10px 0px #3F51B5;
+    top: -5px;
+    left: -5px;
+}
