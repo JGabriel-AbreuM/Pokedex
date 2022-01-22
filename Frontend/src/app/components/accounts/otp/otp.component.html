@@ -1,0 +1,15 @@
+<!-- <mat-sidenav-content class="content"> -->
+    <mat-card class="form-otp">
+        <mat-card-title>Código OTP</mat-card-title>
+        <mat-card-subtitle>Digite seu E-mail</mat-card-subtitle>
+        <form>
+            <mat-form-field>
+                <input matInput type="email" placeholder="Email" [(ngModel)]="cod_otp.email" name="email" class="input-name">
+            </mat-form-field>
+    
+        </form>
+        <button mat-raised-button (click)="OtpCreate()" color="primary" class="cria">
+            Gerar
+        </button>
+    </mat-card>
+<!-- </mat-sidenav-content> -->
