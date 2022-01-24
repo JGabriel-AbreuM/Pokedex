@@ -1,7 +1,6 @@
-table {
-    width: 100%;
+* {
+    box-sizing: border-box;
 }
-
 i.search {
     color: #d9cd26;
     margin-right: 10px;
@@ -12,7 +11,7 @@ i.delete {
 }
 
 button {
-    margin-top: 30px;
+    margin: 0 0 30px 0;
 }
 
 button:hover {
@@ -22,17 +21,52 @@ button:hover {
     transition: 0.5s;
 }
 
-.sidenav {
-    background-color: #3F51B5;
-    width: 200px;
+.body-pokemon {
+    padding: 2rem;
 }
 
-.sidenav a {
-    color: #fff
+.body-cards {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 14px;
 }
 
-.sidenav i {
-    padding-right: 10px;
+.card {
+    width: 12rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-height: 468px;
+    margin-left: 32px;
+    
+}
+
+.card:first-child {
+    margin-left: 0px;
+}
+
+
+@media screen and (max-width: 950px){
+    .body-cards {
+        flex-direction: row;
+    }
+    
+    .card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+
+}
 }
 
 .content {
